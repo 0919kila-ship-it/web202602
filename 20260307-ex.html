@@ -29,8 +29,9 @@
         }
 
         * {
-            margin:20;
-            padding:20;
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
         }
 
         body {
@@ -127,7 +128,7 @@
         }
         .about .section-title,
         .notice .section-title,
-        .contact.section-title{
+        .contact .section-title{
             font-size: 38px;
             text-align: center;
             font-weight: 900;
@@ -150,7 +151,7 @@
             font-size: 38px;
             text-align: center;
             font-weight: 900;
-            color: var(--dark-100);
+            color: var(--dark-700);
             margin-bottom: 20px;
         }
         .courses .course-item h3{
@@ -171,12 +172,12 @@
         .notice ul{
             margin-top: 20px;
             width: 600px;
-            margin-left: 2px;
-            margin-right: 2px;
+            margin-left: 10px;
+            margin-right: 10px;
         }
 
         .notice ul li{
-            font-size: 22px;
+            font-size: 15px;
             line-height: 2rem;
             color: var(--main-500);
             margin-bottom: 5px;
@@ -250,13 +251,17 @@
             padding: 10px 15px;
             font-size: 20px;
             margin-right: 0px;
-            border-top: 5px;
+            border-top: 0px;
            border-radius: 0px;
         }
         .header nav ul li a:hover{
             transform: none;
         }
-        .hero, .about, .courses, .notice, .contact{
+        .hero, 
+        .about, 
+        .courses, 
+        .notice, 
+        .contact{
             padding: 20px 15px;
         }
         .hero h1{
@@ -280,20 +285,23 @@
         }
 
         .about .section-title,
-        .notice.section-title,
-        .contact.section-title,
-        .courses.section-title {
+        .notice .section-title,
+        .contact .section-title,
+        .courses .section-title {
             font-size: 24px;
             margin-bottom: 20px;
         }  
          .courses .course-item h3{
-            font-size: 24px;
+            font-size: 18px;
         }
         .courses .course-item p{
-            font-size: 18px;
-        }    
+            font-size: 15px;}
+
+        .notice ul{
+            width:100%;}      
+            
         .footer{
-            font-size: 16px;
+            font-size: 10px;
             padding-top: 10px;
             padding-bottom: 10px;
         }
