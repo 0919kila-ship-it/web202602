@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>新春活動卡片</title>
+
+<style>
+body{
+    background: radial-gradient(circle, #4b0000, #1a0000);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "微軟正黑體", sans-serif;
+}
+
+/* 卡片主體 */
+.box01{
+    width: 420px;
+    height: 420px;
+    padding: 50px;
+    box-sizing: border-box;
+
+    background: linear-gradient(180deg, #c62828, #f5c16c);
+    border-radius: 25px;
+
+    /* 金色邊框 */
+    border: 3px solid rgba(255, 215, 0, 0.8);
+
+    /* 金色光暈 */
+    box-shadow: 
+        0 0 20px rgba(255, 183, 77, 0.7),
+        0 15px 30px rgba(0,0,0,0.5);
+
+    color: #5b0f0f;
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 1.7;
+    letter-spacing: 3px;
+
+    cursor: pointer;
+
+    position: relative;
+    overflow: hidden;
+
+    transition: 
+        transform 0.6s ease,
+        box-shadow 0.6s ease,
+        background 0.6s ease,
+        letter-spacing 0.8s ease;
+}
+
+/* 金粉光紋 */
+.box01::before{
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.3), transparent 60%);
+    transform: rotate(25deg);
+    opacity: 0.3;
+}
+
+/* hover 效果 */
+.box01:hover{
+    background: linear-gradient(180deg, #ff3d00, #ffd54f);
+    transform: translateY(-15px) scale(1.05);
+
+    box-shadow: 
+        0 0 35px rgba(255, 200, 100, 0.9),
+        0 25px 40px rgba(0,0,0,0.6);
+
+    color: #ffffff;
+    letter-spacing: 6px;
+}
+
+/* 文字區塊 */
+.box01 p{
+    position: relative;
+    z-index: 2;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+}
+
+/* 標題風格 */
+.title{
+    font-size: 34px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #fff3cd;
+    text-shadow: 0 0 10px rgba(255,215,0,0.8);
+}
+
+/* 底部標籤 */
+.tag{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(0,0,0,0.3);
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: 2px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="box01">
+    <div class="title">新春限定活動</div>
+    <p>
+        邀請過程真實性考核領先所屬考慮達到規定擁有保持人員，驚訝給我們解壓年輕人如有領導一對是因為注意這麼多。
+    </p>
+    <div class="tag">NEW YEAR</div>
+</div>
+
+</body>
+</html>

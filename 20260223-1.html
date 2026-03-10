@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0223 html 和 css練習</title>
+    <style>
+        .box01{
+            width: 400px;
+            height: 400px;
+            /*顏色 background-color: #ccc; */
+            background: linear-gradient(180deg,  rgb(226, 127, 168), rgb(240, 243,111));
+            margin-top: 50px;
+            margin-left: 50px;
+            padding: 50px;
+            box-sizing: border-box;
+            border-radius: 20px;
+            box-shadow: 5px -5px 6px 2px red ;
+            /* 文字相關 */
+            color: rgb(44, 4, 119);
+            font-size: 28px;
+            font-weight: bolder;
+            line-height: 1.5;
+            letter-spacing: 4px;
+
+            /* 設定hover的變化時間 ,逗號繼續下寫設定 ;分號結尾  */
+                transition: 
+                transform 0.7s,
+                box-shadow 0.7s,
+                color 0.7s,
+                letter-spacing 5s
+
+                /* 使用背景色可調整 background-color: #ccc 如是使用漸層則無法調整background-color*/
+
+
+        }
+        /* 設置滑鼠移動變化 hover */
+        .box01:hover {
+            background: linear-gradient(180deg,  rgb(80, 191, 224), rgb(168, 111, 243));
+        /* 位移 +左右 +上下 +放大 +旋轉 */
+        transform: translateX(20px)translateY(-20px)scale(1.03)rotate(-5deg);
+
+        /* 陰影加深 */
+        box-shadow: 5px -5px 6px 2px rgb(7, 112, 42) ;
+
+        /* 字變亮 */
+        color: #ffff;
+
+        /* 字體間距 */
+        letter-spacing: 8px;
+        
+     }   
+    </style>
+</head>
+<body>
+    <div class="box01">
+        <p>邀請過程真實性考核領先所屬考慮達到規定擁有保持人員，驚訝給我們解壓年輕人如有領導一對是因為注意這麼多。</p>
+    </div>
+</body>
+</html>

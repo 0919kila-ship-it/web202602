@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>個人履歷首頁</title>
+
+    <!-- 少女字體 -->
+    <link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root{
+            --pistachio: #C8C2A7;
+            --jade-soft: #8B845C;
+            --spring-leaf: #D9D2B6;
+            --mango-mood: #E4572E;
+            --moon-violet: #F4A261;
+            --cloud-blue: #E9C46A;
+            --apricot-soft: #2A9D8F;
+
+            --text-bg02: rgba(58, 54, 39, 0.8);
+            --text-white01: #FAF7F2;
+            --cloud-cream: #F2E9DC;
+            --cherry-dream: #3A3627;
+        }
+
+        body{
+            margin: 0;
+            font-family: "Noto Sans TC", sans-serif;
+        }
+
+        .section01{
+            background-color: var(--pistachio);
+            height: 100vh;
+            position: relative;
+        }
+
+        .box01,.box02,.box03,.box04{
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            background-color: var(--jade-soft);
+        }
+        .box01{ left:0; top:0; }
+        .box02{ right:0; top:0; }
+        .box03{ left:0; bottom:0; }
+        .box04{ right:0; bottom:0; }
+
+        .userimg{
+            position: absolute;
+            top: 50px;
+            bottom: 50px;
+            left: 50px;
+            right: 50px;
+            background-color: var(--spring-leaf);
+            background-image: url(images/user03.avif);
+            background-position: center center;
+            background-size: cover;
+            border-radius: 10px;
+            box-shadow: 5px 5px 15px 5px var(--mango-mood);
+            transition: 1s;
+        }
+
+        .userimg:hover{
+            transform: scale(1.05);
+        }
+
+        .usertext{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            background-color: var(--text-bg02);
+            color: var(--text-white01);
+            padding: 20px 25px;
+            border-radius: 10px;
+            width: 70%;
+            max-width: 600px;
+        }
+
+        /* 少女字體用在標題 */
+        .usertext h1,
+        .usertext h2{
+            font-family: "ZCOOL KuaiLe", cursive;
+        }
+
+        .usertext h1{
+            text-align: center;
+            font-size: 60px;
+            margin: 0;
+        }
+
+        .usertext h2{
+            margin: 10px 0 5px;
+            color: var(--mango-mood);
+            font-size: 25px;
+            text-align: center;
+        }
+
+        .usertext p{
+            font-weight: 500;
+            font-size: 15px;
+            color: var(--cloud-cream);
+            line-height: 1.8;
+        }
+
+        .section02{
+            position: relative;
+            height: 300px;
+        }
+
+        .s02_box01,.s02_box02,.s02_box03{
+            position: absolute;
+            width: 250px;
+            height: 150px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 150px;
+            margin-top: 50px;
+        }
+
+        .s02_box01{
+            background-color: var(--moon-violet);
+            left: 5%;
+        }
+        .s02_box02{
+            background-color: var(--cloud-blue);
+            left: 25%;
+        }
+        .s02_box03{
+            background-color: var(--apricot-soft);
+            left: 45%;
+        }
+
+        .s02_box01 a,
+        .s02_box02 a,
+        .s02_box03 a{
+            text-decoration: none;
+            color: var(--cherry-dream);
+            font-size: 18px;
+            font-weight: 900;
+            font-family: "ZCOOL KuaiLe", cursive;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="section01">
+        <div class="box01"></div>
+        <div class="box02"></div>
+        <div class="box03"></div>
+        <div class="box04"></div>
+
+        <div class="userimg"></div>
+
+        <div class="usertext">
+            <h1>花木蘭</h1>
+            <hr>
+            <h2>前端網頁設計師</h2>
+            <p>
+                熟悉 HTML、CSS 與基礎 JavaScript，重視版面設計與使用者體驗。
+                擅長將資訊轉化為清楚、有層次的畫面呈現，期望成為兼具美感與實用性的前端工程師。
+            </p>
+        </div>
+    </div>
+
+    <div class="section02">
+        <div class="s02_box01">
+            <a href="20260209-1.html" target="_blank">作品集｜HTML 與 CSS 練習</a>
+        </div>
+
+        <div class="s02_box02">
+            <a href="20260223-1.html" target="_blank">作品集｜版面配置設計</a>
+        </div>
+
+        <div class="s02_box03">
+            <a href="20260223-3.html" target="_blank">作品集｜視覺風格練習</a>
+        </div>
+    </div>
+
+</body>
+</html>

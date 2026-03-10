@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap');
+
+
+
+body{
+    font-family: "Zen Maru Gothic", sans-serif;
+
+}
+
+:root{
+            --main-100: #f5f7fa;
+            --main-200: #e8edf3;
+            --main-300: #d7dee8;
+            --main-500: #5b6b7a;
+            --main-700: #2f3e4d;
+            --main-900: #16202a;
+
+          --accent-300: #ff9f43;
+            --accent-500: #ff7f11;
+            --accent-700: #d96500;
+
+            --dark-100: #3c4652;
+            --dark-300: #26313d;
+            --dark-500: #1c242e;
+            --dark-700: #131920;
+            --dark-900: #0b0f14;
+
+            --white: #ffffff;
+            --shadow: rgba(0, 0, 0, 0.25);
+
+
+  --soft-pink: #f8bbd0;
+  --rose-milk: #f4c2c2;
+  --peach-cream: #ffccbc;
+  --apricot-milk: #ffd8c2;
+  --butter-yellow: #fff9c4;
+  --lemon-cream: #fff3b0;
+  --vanilla-soft: #fff8e1;
+  --mint-cream: #c8e6c9;
+  --matcha-soft: #dcedc8;
+  --pistachio-light: #e6ee9c;
+  --baby-blue: #b3e5fc;
+  --sky-milk: #d6f0ff;
+  --aqua-soft: #b2ebf2;
+  --lavender-soft: #e1bee7;
+  --lilac-milk: #ede7f6;
+  --dream-purple: #d1c4e9;
+
+  --sunset-red: #c62828;
+  --lucky-red: #d32f2f;
+  --golden-light: #ffd54f;
+  --honey-gold: #f9a825;
+  --cloud-cream: #fff8e1;
+  --lemon-spark: #fff176;
+  --rose-candy: #f48fb1;
+  --sunshine-yellow: #ffe082;
+  --apricot-soft: #ffccbc;
+
+  /* 🔴 紅 / 粉 */
+  --rose-blush: #f48fb1;
+  --cherry-dream: #ef5350;
+  --sunset-kiss: #ff8a80;
+  --watermelon-pop: #ff5252;
+  --peachy-pink: #ffab91;
+  --cotton-candy: #f8bbd0;
+
+  /* 🟠 橘 / 杏 */
+  --sunrise-orange: #ffb74d;
+  --pumpkin-cream: #ffcc80;
+  --mango-mood: #ffb300;
+  --coral-glow: #ff7043;
+  --papaya-light: #ffab40;
+
+  /* 🟢 綠 / 薄荷 */
+  --mint-breeze: #a5d6a7;
+  --jade-soft: #81c784;
+  --pistachio: #c8e6c9;
+  --matcha-latte: #aed581;
+  --seafoam: #80cbc4;
+  --spring-leaf: #66bb6a;
+
+  /*🔵 藍 / 青  */
+  --dream-blue: #80deea;
+  --sky-cyan: #4dd0e1;
+  --baby-sky: #b3e5fc;
+  --aqua-wish: #4fc3f7;
+  --cloud-blue: #bbdefb;
+  --crystal-lake: #81d4fa; 
+  
+
+  /* 🟣 紫 / 薰衣草 */
+  --fairy-purple: #ba68c8;
+  --lavender-mist: #ce93d8;
+  --grape-soda: #9575cd;
+  --moon-violet: #b39ddb;
+  --plum-soft: #ab47bc;
+  --lilac-veil: #e1bee7;
+
+  /* ⚪ Gray Scale 灰階 */
+  --gray-50:  #fafafa;
+  --gray-100: #f5f5f5;
+  --gray-200: #eeeeee;
+  --gray-300: #e0e0e0;
+  --gray-400: #bdbdbd;
+  --gray-500: #9e9e9e;
+  --gray-600: #757575;
+  --gray-700: #616161;
+  --gray-800: #424242;
+  --gray-900: #212121;  
+
+/* 文字相關 */
+--text-bg01: rgba(0,0,0,0.2);
+--text-bg02: rgba(0,0,0,0.3);
+--text-bg03: rgba(0,0,0,0.4);
+
+--text-white01: rgb(251, 251, 255);
+
+}

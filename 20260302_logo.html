@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0306 基本頁面排版練習</title>
+    <link rel="stylesheet" href="mycss-ai.css">
+    <style>
+        *{
+          margin: 2px; 
+          padding: 2px;
+          
+        }
+        .wrapper{
+            width: 1024px;
+            margin-top: 30px;
+            margin-bottom: 0;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 4px 4px 8px 4px var(--cherry-dream);
+
+        }
+        .logo{
+            background-image: url(images/premium_photo-1772490550942-14dae870d265.avif);
+            height: 220px;
+            background-position: center center;
+            background-size: cover;
+        }
+        .header nav{
+            background-color: var(--cherry-dream);
+            text-align: center;
+        }
+        .header nav ul{
+            display: inline-block;
+        }
+        .header nav ul li{
+            float:left;
+            list-style-type: none;
+        }
+        .header nav ul li a{
+            display: block;
+            padding: 15px 20px;
+            background-color: var(--sunset-kiss);
+            text-decoration: none;
+            color: var(--cloud-cream);
+            font-size: 24px;
+            font-weight: 900;
+            margin-right: 10px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 4px 2px var(--sunset-red);
+            transition: transform 0.5s;
+
+        }
+        .header nav ul li a:hover{
+            transform: scale(1.02) rotate(-5deg);
+            background-color: var(--lucky-red);
+        }
+        .content{
+            padding: 30px 70px;
+            text-align: center;
+            background-color: var(--lilac-veil);           
+        }
+         .content h1{
+            font-size: 30px;
+            color:aliceblue;
+            font-weight: 900;
+            margin-bottom: 20px;
+        }
+        .content p{
+            font-size: 20px;
+            letter-spacing: 2px;
+            line-height: 2.5rem;
+            margin-top: 20px;
+        }
+        .content a{
+            display: block;
+            background-color: var(--fog-white);
+            width: 150px;
+            height: 50px;
+            margin: 0 auto;
+            line-height: 50px;
+            text-decoration: none;
+            color: beige;
+            font-size: 24px;
+            font-weight: 900;
+            border-radius: 10px;
+            box-shadow: 2px 2px 4px 2px var(--cloud-cream);
+        }
+        .footer{
+            background-color: var(--sunset-red);
+            padding-top: 10px;
+            padding-bottom: 10px;
+            text-align: center;
+            color: var(--mint-breeze);
+            font-weight: 900;
+            margin-top: 5px;
+        }
+
+
+        /* 針對手持裝置,*/
+        @media screen and (max-width:768px){
+            .wrapper{
+                width: 100%;
+            }
+
+            
+        } 
+        
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="logo"></div>
+  <!-- nav>ul>li*5>a  快速寫法 -->
+        <nav>
+            <ul>
+                <li><a href="#">首頁</a></li>
+                <li><a href="#">最新消息</a></li>
+                <li><a href="#">合作店家</a></li>
+                <li><a href="#">關於我們</a></li>
+                <li><a href="#">聯絡我們</a></li>
+            </ul>
+        </nav>
+    </div>
+        <div class="content">
+
+            <h1>歡迎光臨</h1>
+            <p>在這個傳說手中，後悔沒有什麼遵守站長異常網際姓名，收費長度意外現在外貿瘋狂狀態版本一半，權威感謝方式交易永遠，提醒嘗試上面開發，目錄不想目標文檔權利女生仍然，是的分析目錄她說我國最好的重大時代高中也在危險，你看網易天空您是，開發商夢幻想要心理保障，仔細表。 </p>
+
+            <a href="#">了解更多</a>
+        </div>
+        <div class="footer">
+            <p>power 跨平台班 2026.03.06</p>
+        </div>
+    </div>
+</body>
+
+
+</html>

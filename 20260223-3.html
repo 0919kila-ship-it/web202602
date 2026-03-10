@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html 和 css練習</title>
+    <link rel="stylesheet" href="css/mycss-ai.css">
+    <style>
+        .box01{
+    width: 400px;
+    height: 400px;
+
+    /* 春節主題漸層：紅 → 金 */
+    background-color: var(--sky-cyan);
+
+    margin-top: 50px;
+    margin-left: 50px;
+    padding: 50px;
+    box-sizing: border-box;
+    border-radius: 20px;
+
+    /* 陰影改為金色柔光 */
+    box-shadow: 0 8px 20px rgba(184, 134, 11, 0.5);
+
+    /* 文字設定 */
+    color: #5b0f0f; /* 深紅棕 */
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 1.6;
+    letter-spacing: 3px;
+
+    transition: 
+        transform 0.6s ease,
+        box-shadow 0.6s ease,
+        color 0.6s ease,
+        letter-spacing 1s ease;
+}
+
+/* hover 效果：更喜氣 */
+.box01:hover {
+    background: linear-gradient(180deg, #ff3d00, #ffd54f);
+
+    transform: translateX(15px) translateY(-15px) scale(1.03);
+
+    /* 光暈更亮 */
+    box-shadow: 0 12px 30px rgba(255, 183, 77, 0.8);
+
+    color: #ffffff;
+
+    letter-spacing: 6px;
+}
+    </style>
+</head>
+<body>
+    <div class="box01">
+        <p>邀請過程真實性考核領先所屬考慮達到規定擁有保持人員，驚訝給我們解壓年輕人如有領導一對是因為注意這麼多。</p>
+    </div>
+</body>
+</html>

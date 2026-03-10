@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap');
+
+
+body{
+    font-family: "Zen Maru Gothic", sans-serif;
+}
+
+:root{
+  --sunset-red: #c62828;
+  --lucky-red: #d32f2f;
+  --golden-light: #ffd54f;
+  --honey-gold: #f9a825;
+  --cloud-cream: #fff8e1;
+
+  --dream-blue: #80deea;
+  --sky-cyan: #4dd0e1;
+  --fairy-purple: #ba68c8;
+  --lavender-mist: #ce93d8;
+  --peach-glow: #ffab91;
+
+  --mint-breeze: #a5d6a7;
+  --lemon-spark: #fff176;
+  --rose-candy: #f48fb1;
+  --sunshine-yellow: #ffe082;
+  --apricot-soft: #ffccbc;
+
+/* 🔴 紅 / 粉 */
+--rose-blush: #f48fb1;
+--cherry-dream: #ef5350;
+--sunset-kiss: #ff8a80;
+--watermelon-pop: #ff5252;
+--peachy-pink: #ffab91;
+--cotton-candy: #f8bbd0;
+
+/* 🟠 橘 / 杏 */
+--apricot-soft: #ffccbc;
+--sunrise-orange: #ffb74d;
+--pumpkin-cream: #ffcc80;
+--mango-mood: #ffb300;
+--coral-glow: #ff7043;
+--papaya-light: #ffab40;
+
+/* 🟢 綠 / 薄荷 */
+--mint-breeze: #a5d6a7;
+--jade-soft: #81c784;
+--pistachio: #c8e6c9;
+--matcha-latte: #aed581;
+--seafoam: #80cbc4;
+--spring-leaf: #66bb6a;
+
+/*🔵 藍 / 青  */
+--dream-blue: #80deea;
+--sky-cyan: #4dd0e1;
+--baby-sky: #b3e5fc;
+--aqua-wish: #4fc3f7;
+--cloud-blue: #bbdefb;
+--crystal-lake: #81d4fa;
+
+/* 🟣 紫 / 薰衣草 */
+--fairy-purple: #ba68c8;
+--lavender-mist: #ce93d8;
+--grape-soda: #9575cd;
+--moon-violet: #b39ddb;
+--plum-soft: #ab47bc;
+--lilac-veil: #e1bee7;
+
+
+}
