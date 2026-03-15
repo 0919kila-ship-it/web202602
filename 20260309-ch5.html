@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ch5.表格(table)</title>
+    <link rel="stylesheet" href="css/my.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>    
+    <div class="container">
+        <div class="display-1 text-center">ch5.表格(table)</div>  
+<!-- 表格table，表頭thead，一列tr，每一格表頭標題th-->
+        <!--美化表格class="table，加 table-dark 黑底白字，單偶數底色不一樣 table-striped -->
+        <!--加邊框 table-bordered，滑鼠移動變色 table-hover，表格內距縮小 table-sm -->
+        <table class="table table-striped table-bordered table-hover table-sm ">
+            <thead class="table-dark">
+                <tr>
+                    <th>編號</th>
+                    <th>品名</th>
+                    <th>價格</th>
+                    <th>數量</th>
+                    <th>備註</th>    
+                </tr>
+            </thead>
+<!-- 表頭下表格行列tbody，一列tr，對應表頭的欄位td-->
+   <!--表格加顏色(有色表) table-success-->
+            <tbody>
+                <tr class="table-success">
+                    <td>001</td>
+                    <td>美式咖啡</td>
+                    <td>50</td>
+                    <td>10</td>
+                    <td>不加糖</td>
+                </tr>
+                <tr>
+                    <td>002</td>
+                    <td>美式咖啡</td>
+                    <td>50</td>
+                    <td>10</td>
+                    <td>不加糖</td>
+                </tr>
+                <tr>
+                    <td>003</td>
+                    <td>美式咖啡</td>
+                    <td>50</td>
+                    <td>10</td>
+                    <td>不加糖</td>
+                </tr>
+                 <tr>
+                    <td>004</td>
+                    <td>美式咖啡</td>
+                    <td>50</td>
+                    <td>10</td>
+                    <td>不加糖</td>
+                </tr>
+                 <tr>
+                    <td>005</td>
+                    <td>美式咖啡</td>
+                    <td>50</td>
+                    <td>10</td>
+                    <td>不加糖</td>
+                </tr>
+            </tbody>
+
+        </table>
+ 
+
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>
