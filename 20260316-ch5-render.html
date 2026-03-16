@@ -62,12 +62,12 @@
                     <th width="30%">員工簡述</th>    
                 </tr>
             </thead>
-            <tbody>
+            <tbody id="datalist">
                 <tr class="table-success">
                     <!-- 隱藏格式data-th， data-(固定指令)th(可以改) -->
                     <!--不換行<span></span>包住一小段文字或內容-->
                     <td data-th="員工編號"><span>1001</span></td>
-                    <td data-th="員工姓名"><span>趙雨凡</span></td>
+                    <td data-th="員工姓名"><span>趙小雨</span></td>
                     <td data-th="員工照片"><span><img src="images/cortis01.jpg" class="img-fluid" alt=""></span></td>
                     <td data-th="員工部門"><span>資訊部</span></td>
                     <td data-th="員工職位"><span>前端工程師</span></td>
@@ -80,6 +80,35 @@
     </div>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/jquery-4.0.0.js"></script>
-    
+    <script>
+        //console.log 查看變數內容
+        $(function(){
+            console.log("hello");
+            console.log("girl");
+            console.log("boy");
+
+            //迴圈 重複做某一件事情
+            //i=0;i從0開始，i<10只要i小於10就繼續，i++每次 +1，{ }迴圈執行內容
+            //for(let i=0; i<100; i++){
+            //    for(let j=1; j<10; j++){
+             //       console.log(i + "x" + j +" = " + i*j);
+            //    }
+         //+是字串連接，x是乘號，i*j是運算結果，i是外層迴轉，j是內層迴轉
+           // }
+           for(let i=0; i<100; i++){ 
+            
+            let strhtml = `<tr class="table-success">
+                    <td data-th="員工編號"><span>1001</span></td>
+                    <td data-th="員工姓名"><span>趙小雨</span></td>
+                    <td data-th="員工照片"><span><img src="images/cortis01.jpg" class="img-fluid" alt=""></span></td>
+                    <td data-th="員工部門"><span>資訊部</span></td>
+                    <td data-th="員工職位"><span>前端工程師</span></td>
+                    <td data-th="員工簡述"><span>負責公司網站前端開發與維護，熟悉HTML、CSS與JavaScript，能製作RWD響應式網頁，提升網站在手機與電腦上的瀏覽體驗，同時與設計師及後端工程師合作，確保網站功能與畫面能順利整合並穩定運作。</span></td>  
+               </tr>`;
+            $("#datalist").append(strhtml);
+            // 固定版本的指令寫法 $("#datalist")，append堆疊
+        }
+    });
+    </script>    
 </body>
 </html>
