@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>老師_ch6 排版練習02</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/mycss-ai.css">
+    <style>
+        .box01{
+            height: 220px;
+            margin-top: 15px;
+            background-image: url(images/landscape01.avif);
+            background-position: center center;
+            background-size: cover;
+        }
+
+        .box02{
+            height: 140px;
+            background-color: var(--plum-200);
+            line-height: 140px;
+            margin-top: 15px;
+        }
+
+        .box03{
+            box-shadow: 2px 2px 4px 2px var(--neutral-700);
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 15px;
+            transition: box-shadow 1s;
+        }
+        .box03 p{
+            font-size: 18px;
+        }
+
+        .box03:hover{
+            box-shadow: 2px 2px 8px 4px var(--neutral-400);
+        }
+
+        @media screen and (min-width: 992px){
+            .box02{
+                width: 220px;
+                height: 220px;
+                border-radius: 50%;
+                line-height: 220px;
+                background-color: var(--gold-400);
+            }
+            .box02:hover{
+                background-color: var(--raspberry-400);
+                color: var(--cream-50);
+            }
+        }
+
+        @media screen and (min-width: 1200px){
+            .box02{
+                width: 280px;
+                height: 280px;
+                border-radius: 50%;
+                line-height: 280px;
+                background-color: var(--raspberry-900);
+                color: var(--mint-100);
+            }
+            .box02:hover{
+                background-color: var(--raspberry-300);
+                color: var(--mint-400);
+            }
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- 01 -->
+         <div class="row">
+            <div class="col-12 d-none d-sm-block">
+                <div class="box01 bg-primary"></div>
+            </div>
+         </div>
+        <!-- 02 -->
+         <div class="row">
+            <div class="col-sm-6 col-md-3">
+                <div class="box02 text-center h1">選單01</div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="box02 text-center h1">選單02</div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="box02 text-center h1">選單03</div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="box02 text-center h1">選單04</div>
+            </div>
+         </div>
+
+        <!-- 03 -->
+         <div class="row">
+            <div class="col-md-6 col-lg-4">
+                <div class="box03">
+                    <div style="background-image: url(images/landscape02.avif); height: 220px; background-position: center center; background-size: cover; margin-bottom: 10px;"></div>
+                    <div class="h4 text-center">旅遊景點001</div>
+                    <p>降低放心完善打了開放演唱大家都案例在我要求眼光，都會查找面向環境記錄委託實在實在專門一眼真是，而已。</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="box03">
+                    <div style="background-image: url(images/landscape03.avif); height: 220px; background-position: center center; background-size: cover; margin-bottom: 10px;"></div>
+                    <div class="h4 text-center">旅遊景點002</div>
+                    <p>降低放心完善打了開放演唱大家都案例在我要求眼光，都會查找面向環境記錄委託實在實在專門一眼真是，而已。</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="box03">
+                    <div style="background-image: url(images/landscape04.avif); height: 220px; background-position: center center; background-size: cover; margin-bottom: 10px;"></div>
+                    <div class="h4 text-center">旅遊景點003</div>
+                    <p>降低放心完善打了開放演唱大家都案例在我要求眼光，都會查找面向環境記錄委託實在實在專門一眼真是，而已。</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="box03">
+                    <div style="background-image: url(images/landscape05.avif); height: 220px; background-position: center center; background-size: cover; margin-bottom: 10px;"></div>
+                    <div class="h4 text-center">旅遊景點004</div>
+                    <p>降低放心完善打了開放演唱大家都案例在我要求眼光，都會查找面向環境記錄委託實在實在專門一眼真是，而已。</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="box03">
+                    <div style="background-image: url(images/landscape06.avif); height: 220px; background-position: center center; background-size: cover; margin-bottom: 10px;"></div>
+                    <div class="h4 text-center">旅遊景點005</div>
+                    <p>降低放心完善打了開放演唱大家都案例在我要求眼光，都會查找面向環境記錄委託實在實在專門一眼真是，而已。</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="box03">
+                    <div style="background-image: url(images/landscape02.avif); height: 220px; background-position: center center; background-size: cover; margin-bottom: 10px;"></div>
+                    <div class="h4 text-center">旅遊景點006</div>
+                    <p>降低放心完善打了開放演唱大家都案例在我要求眼光，都會查找面向環境記錄委託實在實在專門一眼真是，而已。</p>
+                </div>
+            </div>
+         </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
