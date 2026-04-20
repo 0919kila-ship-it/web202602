@@ -1,0 +1,59 @@
+<!-- 請用我目前已學過的 Bootstrap 切版技術，幫我設計一個更貼近實務的商業首頁版面。
+
+需求：
+- 主題是＿＿＿＿（請自行替換）
+- 只能使用 container-fluid、row、col、d-flex、vh-100、h-50、背景圖、roller 效果
+- 可以微調語法，但不要加入太多新技術
+- 版面要像真實品牌官網首頁，不要像練習作業或圖片拼貼
+- 必須有主視覺、促銷區、分類入口、主打商品或服務、CTA 區
+- 文案要像真的商業網站，不要太空泛
+- 請直接給我完整 HTML
+- 最後補充這個版面的商業邏輯與教學重點 -->
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ch8 spacing 排版練習02</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/my.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4 bg-cover" style="background-image: url(images/B04.avif); height: 180px;"></div>
+            <div class="col-md-4 bg-cover" style="background-image: url(images/B05.avif); height: 180px;"></div>
+            <div class="col-md-4 bg-cover" style="background-image: url(images/B06.avif); height: 180px;"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3 vh-100">
+                <div class="d-flex flex-column h-100 row">
+                    <div class="bg-cover" style="background-image: url(images/B07.avif); height: 33.3vh;"></div>
+                    <div class="bg-cover" style="background-image: url(images/B08.avif); height: 33.3vh;"></div>
+                    <div class="bg-cover" style="background-image: url(images/B09.avif); height: 33.3vh;"></div>
+                </div>
+            </div>
+            <div class="col-md-6 bg-cover roller-box-right-bottom" style="background-image: url(images/TW01.avif)">
+                <div class="roller">
+                    <a href="#" class="btn btn-danger">XXXX</a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="d-flex flex-column h-100 row">
+                    <div class="h-50 bg-cover" style="background-image: url(images/TW02.avif);"></div>
+                    <div class="h-50 bg-cover" style="background-image: url(images/TW03.avif);"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3 bg-cover" style="background-image: url(images/TW04.avif); height: 220px;"></div>
+            <div class="col-md-3 bg-cover" style="background-image: url(images/TW05.avif); height: 220px;"></div>
+            <div class="col-md-3 bg-cover" style="background-image: url(images/TW06.avif); height: 220px;"></div>
+            <div class="col-md-3 bg-cover" style="background-image: url(images/TW07.avif); height: 220px;"></div>
+        </div>
+    </div>
+    <script src="js/jquery-4.0.0.js"></script>
+</body>
+</html>

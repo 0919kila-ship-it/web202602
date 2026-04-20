@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>卷軸 roller</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/my.css">
+    <style>
+        .box {
+            height: 220px;
+        }
+/********** roller相關應用(可寫入css/my.css套用) **********/
+   /* 外層使用.reller-box */
+   /* 內層使用.reller */
+   /* 從左邊滑入 */   
+        .roller-box-left {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .roller-box-left .roller {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.3);
+            transform: translateX(-100%);
+            transition: transform 1.5s;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .roller-box-left:hover .roller {
+            transform: translateX(0);
+        }
+
+        /* 從右邊滑入 */
+        .roller-box-right {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .roller-box-right .roller {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.3);
+            transform: translateX(100%);
+            transition: transform 1.5s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .roller-box-right:hover .roller {
+            transform: translateX(0);
+        }
+
+        /* 從上方滑入 */
+        .roller-box-top {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .roller-box-top .roller {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.3);
+            transform: translateY(-100%);
+            transition: transform 1.5s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .roller-box-top:hover .roller {
+            transform: translateX(0);
+        }
+
+        /* 從下方滑入 */
+        .roller-box-bottom {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .roller-box-bottom .roller {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.3);
+            transform: translateY(100%);
+            transition: transform 1.5s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .roller-box-bottom:hover .roller {
+            transform: translateX(0);
+        }
+
+        /* 從左上方滑入 */
+        .roller-box-left-top {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .roller-box-left-top .roller {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.3);
+            transform: translate(-100%, -100%);
+            transition: transform 1.5s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .roller-box-left-top:hover .roller {
+            transform: translateX(0);
+        }
+
+        /* 從右上方滑入 */
+        .roller-box-right-top {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .roller-box-right-top .roller {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.3);
+            transform: translate(100%, -100%);
+            transition: transform 1.5s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .roller-box-right-top:hover .roller {
+            transform: translateX(0);
+        }
+
+        /* 從左下方滑入 */
+        .roller-box-left-bottom {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .roller-box-left-bottom .roller {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.3);
+            transform: translate(-100%, 100%);
+            transition: transform 1.5s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .roller-box-left-bottom:hover .roller {
+            transform: translateX(0);
+        }
+
+        /* 從右下方滑入 */
+        .roller-box-right-bottom {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .roller-box-right-bottom .roller {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.3);
+            transform: translate(100%, 100%);
+            transition: transform 1.5s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .roller-box-right-bottom:hover .roller {
+            transform: translateX(0);
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-6 mt-5">
+                <div class="roller-box-left">
+                    <div class="roller">
+                        <a href="#" class="btn btn-primary">查看更多</a>
+                    </div>
+                    <div class="box bg-warning"></div>
+                </div>
+            </div>
+            <div class="col-6 mt-5">
+                <div class="roller-box-right">
+                    <div class="roller">
+                        <a href="#" class="btn btn-primary">查看更多</a>
+                    </div>
+                    <div class="box bg-warning"></div>
+                </div>
+            </div>
+            <div class="col-6 mt-5">
+                <div class="roller-box-top">
+                    <div class="roller">
+                        <a href="#" class="btn btn-primary">查看更多</a>
+                    </div>
+                    <div class="box bg-warning"></div>
+                </div>
+            </div>
+            <div class="col-6 mt-5">
+                <div class="roller-box-bottom">
+                    <div class="roller">
+                        <a href="#" class="btn btn-primary">查看更多</a>
+                    </div>
+                    <div class="box bg-warning"></div>
+                </div>
+            </div>
+
+            <div class="col-6 mt-5">
+                <div class="roller-box-left-top">
+                    <div class="roller">
+                        <a href="#" class="btn btn-primary">查看更多</a>
+                    </div>
+                    <div class="box bg-warning">左上方</div>
+                </div>
+            </div>
+
+            <div class="col-6 mt-5">
+                <div class="roller-box-right-top">
+                    <div class="roller">
+                        <a href="#" class="btn btn-primary">查看更多</a>
+                    </div>
+                    <div class="box bg-warning">右上方</div>
+                </div>
+            </div>
+
+            <div class="col-6 mt-5">
+                <div class="roller-box-left-bottom">
+                    <div class="roller">
+                        <a href="#" class="btn btn-primary">查看更多</a>
+                    </div>
+                    <div class="box bg-warning">左下方</div>
+                </div>
+            </div>
+
+            <div class="col-6 mt-5">
+                <div class="roller-box-right-bottom">
+                    <div class="roller">
+                        <a href="#" class="btn btn-primary">查看更多</a>
+                    </div>
+                    <div class="box bg-warning">右下方</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-4.0.0.js"></script>
+</body>
+
+</html>
