@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Perfume Brand</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #0d0d0d;
+            color: #ffffff;
+        }
+
+        .gold {
+            color: #d4af37;
+        }
+
+        .timeline-section {
+            position: relative;
+        }
+
+        /* 中間時間軸線 */
+        .timeline-section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background-color: #d4af37;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        /* 節點 */
+        .timeline-section-pointer {
+            position: relative;
+            margin-bottom: 60px;
+        }
+
+        .timeline-section-pointer::before {
+            content: "";
+            position: absolute;
+            width: 24px;
+            height: 24px;
+            background-color: #0d0d0d;
+            border: 5px solid #d4af37;
+            border-radius: 50%;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .timeline-section-pointer:hover::before {
+            width: 30px;
+            height: 30px;
+        }
+
+        .bg-cover {
+            background-size: cover;
+            background-position: center;
+            height: 280px;
+        }
+
+        .card-text {
+            padding: 20px;
+        }
+
+        /* 手機版 */
+        @media screen and (max-width: 768px) {
+            .timeline-section::before,
+            .timeline-section-pointer::before {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 品牌標題 -->
+    <div class="container py-5 text-center">
+        <h1 class="display-4 gold">AURELIA PARFUM</h1>
+        <p class="mt-3">以香氣定義高端生活，打造專屬於現代消費者的氣味資產與品牌體驗。</p>
+    </div>
+
+    <!-- 時間軸 -->
+    <div class="container timeline-section">
+
+        <!-- 香味研發 -->
+        <div class="row align-items-center timeline-section-pointer">
+            <div class="col-md-6">
+                <div class="card-text">
+                    <h3 class="gold">香氛研發體系升級</h3>
+                    <p>
+                        導入國際調香師資源，建立多層次香調資料庫，
+                        透過市場數據分析優化香味結構，提升產品辨識度與品牌記憶點。
+                    </p>
+                    <p>
+                        聚焦「前調吸引、中調記憶、後調留香」的商業邏輯，
+                        強化消費者回購率與品牌黏著度。
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="bg-cover" style="background-image: url(images/A10.avif);"></div>
+            </div>
+        </div>
+
+        <!-- 代言人 -->
+        <div class="row align-items-center flex-row-reverse timeline-section-pointer">
+            <div class="col-md-6">
+                <div class="card-text">
+                    <h3 class="gold">品牌代言人策略</h3>
+                    <p>
+                        與國際形象人物合作，強化品牌高端定位，
+                        透過視覺與氣味整合行銷，提升市場辨識與話題性。
+                    </p>
+                    <p>
+                        建立跨平台曝光策略，串聯社群與實體通路，
+                        放大品牌影響力。
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="bg-cover" style="background-image: url(images/A07.avif);"></div>
+            </div>
+        </div>
+
+        <!-- 會員體驗 -->
+        <div class="row align-items-center timeline-section-pointer">
+            <div class="col-md-6">
+                <div class="card-text">
+                    <h3 class="gold">會員體驗優化</h3>
+                    <p>
+                        推出專屬會員制度，提供客製香氛建議、
+                        限量新品優先體驗與專屬優惠。
+                    </p>
+                    <p>
+                        結合消費數據分析，打造個人化推薦機制，
+                        提升整體消費體驗與品牌忠誠度。
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="bg-cover" style="background-image: url(images/A03.avif);"></div>
+            </div>
+        </div>
+
+        <!-- 百貨合作 -->
+        <div class="row align-items-center flex-row-reverse timeline-section-pointer">
+            <div class="col-md-6">
+                <div class="card-text">
+                    <h3 class="gold">百貨通路拓展</h3>
+                    <p>
+                        與高端百貨建立策略合作，進駐核心商圈，
+                        提供沉浸式香氛體驗空間。
+                    </p>
+                    <p>
+                        結合線上預約與線下體驗，
+                        建立完整O2O營運模式。
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="bg-cover" style="background-image: url(images/A06.avif);"></div>
+            </div>
+        </div>
+
+        <!-- 商業價值 -->
+        <div class="row align-items-center timeline-section-pointer">
+            <div class="col-md-6">
+                <div class="card-text">
+                    <h3 class="gold">品牌價值擴展</h3>
+                    <p>
+                        從單一產品銷售轉型為生活風格品牌，
+                        延伸至空間香氛與企業合作服務。
+                    </p>
+                    <p>
+                        建立長期營運模式，強化品牌資產與市場競爭力。
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="bg-cover" style="background-image: url(images/A05.avif);"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js/jquery-4.0.0.js"></script>
+</body>
+
+</html>

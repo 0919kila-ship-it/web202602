@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ch8. 練習03</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/my.css">
+    <style>
+        body{
+            background-color: rgb(250, 241, 235);
+        }
+        .timeline-section{
+            position: relative;
+        }
+        .timeline-section::before{
+            position: absolute;
+            content: "";
+            top: 0;
+            bottom: 0;
+            width:2px;
+            background-color: brown;
+            left: 50%;
+            transform: translateX(-50%);         
+        }
+        .timeline-section-pointer{
+            position: relative;
+        }
+        .timeline-section-pointer::before{
+            position: absolute;
+            content: "";
+            width:30px;
+            height: 30px;
+            background-color: rgb(250, 241, 235);
+            top: 0;
+            border-radius: 50%;
+            left: 50%;
+            transform: translateX(-50%);
+            border: solid 8px red;
+            /*border 空心圓*/
+        }
+
+        .timeline-section-pointer:hover::before{
+            width: 40px;
+            height: 40px;
+        }
+
+        @media screen and (max-width: 768px){
+           /* 手機版768px 不會顯示時間軸*/
+           .timeline-section::before, 
+           .timeline-section-pointer::before{display: none;} 
+        }
+           /*.timeline-section::before{
+            left: -2%;
+           }
+
+           .timeline-section-pointer::before{
+            left: 5px;
+            width: 5px;
+            height: 5px;
+           }*/
+               
+    </style>
+</head>
+<body>
+    <div class="container py-4">
+        <div class="timeline-section">
+        <div class="row align-items-center timeline-section-pointer">
+            <div class="col-md-6">
+                <div class="text">
+                    <div class="h2 text-center text-success">1970年</div>
+                    <p class="fs-5">圖象招聘簽名驚人晶片二人農村大會聽到，只要是從必然能量告訴我，屏東財政面臨沒有記住怎麼，讓人僅供似。</p>
+
+                    <p class="fs-5">促銷加上在於顯示表明退出必然招商女生，各項三個除了自己對象治療廠商感染進來會議保護應當感謝恐怕，上。</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="bg-cover" style="background-image: url(images/A08.avif) ; height: 280px;"></div>
+            </div>
+        </div>
+        <div class="row align-items-center flex-row-reverse timeline-section-pointer">
+            <div class="col-md-6">
+                <div class="text">
+                    <div class="h2 text-center text-success">1980年</div>
+                    <p class="fs-5">圖象招聘簽名驚人晶片二人農村大會聽到，只要是從必然能量告訴我，屏東財政面臨沒有記住怎麼，讓人僅供似。</p>
+
+                    <p class="fs-5">促銷加上在於顯示表明退出必然招商女生，各項三個除了自己對象治療廠商感染進來會議保護應當感謝恐怕，上。</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="bg-cover" style="background-image: url(images/A10.avif) ; height: 280px;"></div>
+            </div>
+        </div>
+        <div class="row align-items-center timeline-section-pointer">
+            <div class="col-md-6">
+                <div class="text">
+                    <div class="h2 text-center text-success">1990年</div>
+                    <p class="fs-5">圖象招聘簽名驚人晶片二人農村大會聽到，只要是從必然能量告訴我，屏東財政面臨沒有記住怎麼，讓人僅供似。</p>
+
+                    <p class="fs-5">促銷加上在於顯示表明退出必然招商女生，各項三個除了自己對象治療廠商感染進來會議保護應當感謝恐怕，上。</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="bg-cover" style="background-image: url(images/A05.avif) ; height: 280px;"></div>
+            </div>
+        </div>
+        <div class="row align-items-center flex-row-reverse timeline-section-pointer">
+            <div class="col-md-6">
+                <div class="text">
+                    <div class="h2 text-center text-success">2000年</div>
+                    <p class="fs-5">圖象招聘簽名驚人晶片二人農村大會聽到，只要是從必然能量告訴我，屏東財政面臨沒有記住怎麼，讓人僅供似。</p>
+
+                    <p class="fs-5">促銷加上在於顯示表明退出必然招商女生，各項三個除了自己對象治療廠商感染進來會議保護應當感謝恐怕，上。</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="bg-cover" style="background-image: url(images/A06.avif) ; height: 280px;"></div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-4.0.0.js"></script>
+</body>
+
+</html>
