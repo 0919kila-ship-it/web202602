@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ch11 表單(JavaScript)</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/my.css">
+</head>
+
+<body>
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6 shadow p-3 rounded-3">
+                <div class="h2 text-bg-danger py-2 text-center rounded-3">產品建檔(飲料)</div>
+                <div class="mb-3">
+                    <label for="" class="form-label">產品名稱</label>
+                    <input type="text" class="form-control" id="pname">
+                </div>
+                <div class="mb-3">
+                    <label for="" class="form-label">產品數量</label>
+                    <input type="number" min="1" max="100" class="form-control" id="pnum">
+                </div>
+
+                <!-- 規格欄位 - datalist -->
+                <div class="mb-3">
+                    <label for="" class="form-label">容量</label>
+                    <input type="text" class="form-control form-control-lg" list="pnamelist" id="pstandard">
+                    <datalist id="pnamelist">
+                        <option value="250 cc"></option>
+                        <option value="500 cc"></option>
+                        <option value="750 cc"></option>
+                        <option value="1000 cc"></option>
+                    </datalist>
+                </div>
+
+
+                <div class="text-end">
+                    <button class="btn btn-secondary">取消</button>
+                    <button class="btn btn-primary" id="ok_btn">確認</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center mt-4">
+            <div class="col-md-6 shadow p-3 rounded-3">
+                <div class="h2 text-bg-success py-2 text-center rounded-3 mb-3">結果確認</div>
+                <div class="h3">產品名稱: <span class="h1 fw-bolder text-primary" id="pname_text">XXXXX</span> </div>
+                <div class="h3">產品數量: <span class="h1 fw-bolder text-primary" id="pnum_text">XXXXX</span></div>
+                <div class="h3">產品規格: <span class="h1 fw-bolder text-primary" id="pnamelist_text">XXXXX</span></div>
+            </div>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-4.0.0.js"></script>
+    <script>
+        $(function () {
+            //監聽按鈕 #ok_btn
+            $("#ok_btn").click(function(){
+                console.log($("#pname").val());
+                console.log($("#pnum").val());
+                console.log($("#pstandard").val());
+
+                $("#pname_text").text($("#pname").val());
+                $("#pnum_text").text($("#pnum").val());
+                $("#pnamelist_text").text($("#pstandard").val());
+            });
+        })
+    </script>
+</body>
+
+</html>
